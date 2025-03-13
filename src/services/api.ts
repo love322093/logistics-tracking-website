@@ -1,16 +1,23 @@
-import axios from 'axios';
+// ...existing code...
 
-const API_BASE_URL = 'http://xwtd.rtb56.com/webservice/PublicService.asmx/ServiceInterfaceUTF8'; // 替换为实际的API基础URL
+export const fetchTrackingData = async (trackingNumber: string) => {
+    const response = await fetch('http://xwtd.rtb56.com/webservice/PublicService.asmx/ServiceInterfaceUTF8', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: new URLSearchParams({
+            appToken: '665dd4685baea4d6913c224aba5849de',
+            appKey: '402f8da5b5587dc9e85275a869b67e10402f8da5b5587dc9e85275a869b67e10',
+            serviceMethod: 'gettrack',
+            paramsJson: JSON.stringify({ tracking_number: trackingNumber }),
+        }),
+    });
 
-export const trackShipment = async (trackingNumber: string, language: string) => {
-    try {
-        const response = await axios.post(`${API_BASE_URL}/track`, {
-            trackingNumber,
-            language
-        });
-        return response.data;
-    } catch (error) {
-        console.error('Error tracking shipment:', error);
-        throw error;
+    if (!response.ok) {
+        throw new Error('Network response was not ok');
     }
+
+    const data = await response.json();
+    return data;
 };
