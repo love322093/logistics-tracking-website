@@ -1,0 +1,23 @@
+{
+  "title": "物流追踪网站",
+  "description": "欢迎使用我们的物流追踪服务。请输入您的物流单号进行查询。",
+  "tracking": {
+    "label": "物流单号",
+    "placeholder": "请输入物流单号",
+    "button": "查询"
+  },
+  "results": {
+    "title": "查询结果",
+    "notFound": "未找到相关物流信息。",
+    "status": "当前状态",
+    "details": "详细信息"
+  },
+  "footer": {
+    "contact": "联系我们",
+    "terms": "服务条款",
+    "privacy": "隐私政策"
+  },
+  "language": {
+    "switch": "切换语言"
+  }
+}

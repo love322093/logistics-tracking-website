@@ -1,0 +1,15 @@
+{
+  "title": "Logistics Tracking",
+  "description": "A web application for tracking logistics shipments.",
+  "search_placeholder": "Enter tracking number...",
+  "track_button": "Track",
+  "language_switch": "Switch Language",
+  "footer_text": "© 2023 Logistics Tracking. All rights reserved.",
+  "error": {
+    "not_found": "Tracking number not found.",
+    "server_error": "An error occurred while fetching data. Please try again later."
+  },
+  "success": {
+    "tracking_info": "Tracking information retrieved successfully."
+  }
+}

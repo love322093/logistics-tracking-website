@@ -1,0 +1,27 @@
+{
+  "name": "logistics-tracking-website",
+  "version": "1.0.0",
+  "description": "A multilingual logistics tracking website that adapts to user location.",
+  "main": "src/index.tsx",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "i18next": "^21.6.3",
+    "react-i18next": "^11.15.3",
+    "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.1.3",
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.2"
+  },
+  "homepage": ".",
+  "license": "MIT"
+}
